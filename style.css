@@ -1,5 +1,53 @@
 body{
     background-color: #e5e5f7;
-opacity: 0.8;
-background: linear-gradient(135deg, #45bef755 25%, transparent 25%) -6px 0/ 12px 12px, linear-gradient(225deg, #45bef7 25%, transparent 25%) -6px 0/ 12px 12px, linear-gradient(315deg, #45bef755 25%, transparent 25%) 0px 0/ 12px 12px, linear-gradient(45deg, #45bef7 25%, #e5e5f7 25%) 0px 0/ 12px 12px;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 22px ), repeating-linear-gradient( #d85f9755, #d85f97 );}
+
+#nav1{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    /*    background-color: rgb(91, 4, 74);  */
+    text-shadow: 10px 10px 10px grey;
+    padding: 1.2rem;
+    border-color: rgb(91, 4, 74);
+    border-width: 0.2rem;
+    border-style: solid;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.btnSup{
+    padding: 5.5rem;
+    
+}
+
+#logoPpal{
+    margin-top: 2rem;
+    margin-left: 23rem;
+    margin-bottom: 0.2rem;
+    display: block;
+    width: 15rem;
+    border-color: rgb(91, 4, 74);
+    border-width: 0.2rem;
+    border-style: solid;
+
+}
+
+#tituloPpal{
+    font-family: "Arial";
+    text-align: center;
+    color: rgb(169, 105, 20);
+    font-size: 80px;
+    /* Cambiar el grosor de la leta */
+    font-weight: 1000;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+p{
+    margin-top: 0.2rem;
+    font-family: "Arial";
+    text-align: center;
+    background-color: rgb(95, 5, 84);
+    color: whitesmoke;
+    font-size: 1rem;
 }
