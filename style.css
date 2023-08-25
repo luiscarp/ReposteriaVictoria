@@ -1,39 +1,15 @@
 body {
-  background-color: #e5e5f7;
-  opacity: 1;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #e5e5f7 22px
-    ),
-    repeating-linear-gradient(#d85f9755, #d85f97);
+  background: rgb(21,68,222);
+  background: linear-gradient(90deg, rgba(21,68,222,1) 0%, rgba(159,197,241,1) 100%);
+
 }
 
-#carouselExampleIndicators {
-  margin-bottom: 2rem;
+.presentacion{
+  margin-bottom: 2vw;
 }
 
-.textoppal {
+.text-center{
+  background-color: rgb(215, 217, 230);
+  color: black;
   margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
-  color: white;
-  background: rgb(21, 68, 222);
-  background: linear-gradient(
-    90deg,
-    rgba(21, 68, 222, 1) 0%,
-    rgba(159, 197, 241, 1) 100%
-  );
-  width: 100vw;
-}
-
-h1 {
-  display: flex;
-  flex-direction: row;
-}
-
-#containerppal{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
