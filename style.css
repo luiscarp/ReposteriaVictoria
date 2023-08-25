@@ -1,53 +1,39 @@
-body{
-    background-color: #e5e5f7;
-    opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 22px ), repeating-linear-gradient( #d85f9755, #d85f97 );}
-
-#nav1{
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    /*    background-color: rgb(91, 4, 74);  */
-    text-shadow: 10px 10px 10px grey;
-    padding: 1.2rem;
-    border-color: rgb(91, 4, 74);
-    border-width: 0.2rem;
-    border-style: solid;
-    margin: 1rem 1rem 1rem 1rem;
+body {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 22px
+    ),
+    repeating-linear-gradient(#d85f9755, #d85f97);
 }
 
-.btnSup{
-    padding: 5.5rem;
-    
+#carouselExampleIndicators {
+  margin-bottom: 2rem;
 }
 
-#logoPpal{
-    margin-top: 2rem;
-    margin-left: 23rem;
-    margin-bottom: 0.2rem;
-    display: block;
-    width: 15rem;
-    border-color: rgb(91, 4, 74);
-    border-width: 0.2rem;
-    border-style: solid;
-
+.textoppal {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background: rgb(21, 68, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 68, 222, 1) 0%,
+    rgba(159, 197, 241, 1) 100%
+  );
+  width: 100vw;
 }
 
-#tituloPpal{
-    font-family: "Arial";
-    text-align: center;
-    color: rgb(169, 105, 20);
-    font-size: 80px;
-    /* Cambiar el grosor de la leta */
-    font-weight: 1000;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+h1 {
+  display: flex;
+  flex-direction: row;
 }
 
-p{
-    margin-top: 0.2rem;
-    font-family: "Arial";
-    text-align: center;
-    background-color: rgb(95, 5, 84);
-    color: whitesmoke;
-    font-size: 1rem;
+#containerppal{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
