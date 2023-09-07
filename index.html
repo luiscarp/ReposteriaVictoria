@@ -2,157 +2,177 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Reposteria Victoria</title>
-	<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <title>Reposteria Victoria</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body>
-	<!DOCTYPE html>
-	<html lang="es">
+<body class="bg-pink-200">
+  <nav class="bg-pink-300">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="https://res.cloudinary.com/dz9dt7nqo/image/upload/v1694119051/logoreposteria_pvdslr.jpg"
+          class="h-14 mr-3" alt="LogoCimav" />
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Reposteria Victoria</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-pink-300 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-pink-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html"
+              class="block py-2 pl-3 pr-4 text-white bg-pink-300 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+              aria-current="page">Inicio</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              Nuestros productos
+              <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-xs text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="nuestrastecnicas.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nuestras
+                    tecnicas</a>
+                </li>
+                <li>
+                  <a href="tga.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Análisis
+                    Termogravimétrico</a>
+                </li>
+                <li>
+                  <a href="dsc.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Calorimetría
+                    diferencial por barrido</a>
+                </li>
+                <li>
+                  <a href="tma.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Análisis
+                    Termomecánico</a>
+                </li>
+                <li>
+                  <a href="otros.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Otras
+                    técnicas</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="resenas.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Reseñas</a>
+          </li>
+          <li>
+            <a href="calendario.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Calendario
+              de pedidos</a>
+          </li>
+          <li>
+            <a href="nosotros.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Repostería Victoria</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-	</head>
+  <h1 class="text-4xl md:text-6xl lg:text-6xl text-center font-bold py-4 z-1 relative">Reposteria Victoria</h1>
 
-	<body>
-
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container">
-				<a class="navbar-brand" href="#">Repostería Victoria</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Inicio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Productos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-		<div class="presentacion">
-			<img src="https://res.cloudinary.com/dz9dt7nqo/image/upload/v1692997722/qb9hg0tmfwuwk5mnnsfp.jpg"
-				class="img-fluid" alt="...">
-		</div>
-
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
-
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/353675758_640305948144562_7944095191452428653_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEPXDjaRcW_tHw5X-7BuW_6FaUe5UYAU1cVpR7lRgBTV7QsV_43Wo4i7tCq1ez57HY&_nc_ohc=GFRG-6cCg8cAX-sxwtt&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfDDJwruHzEKuyWzPYbBBklsxQi3bdvD12_M-AtuCZUdJw&oe=64EDCE3D"
-						class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/326902645_1104802904254849_3108115037708602921_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEuMiI510GigVYmABv9L0s2OhUiu-iSQd06FSK76JJB3UnJP9e84OH2RGLKcXQZf30&_nc_ohc=L4BvTHKAa9sAX_jEvPq&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfDxlWTvvS5UBa6Mi00dELm4CzFukTQgxAoR3NhQiVvPEQ&oe=64ECA1B8"
-						class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/321349404_467445632217775_3242249316641332481_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeH6wun427JY0fbS1fJZmbiWtp4YUb8gkee2nhhRvyCR537AxgRlL4euqRaIpRKkPFg&_nc_ohc=Wiwe7pNBPGsAX-_tySn&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfCrMM4rEkKRfcWZ8Lvz4PxdWPKiYxtkMbJqJvVkZZj3uQ&oe=64EC4A54"
-						class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/294051483_1001581787126036_1804136068082046338_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEGGYK37yH-kYhLV_wxugL0Q4SdSAgiWcpDhJ1ICCJZyiuwWb-A7Z2A3jyIHVDGbS0&_nc_ohc=-KW7ebAsm34AX8KzoU_&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfCiRd7ejJShP2s2kortfDB0nNVVGf-7tF9BY-bhgB2alQ&oe=64ED9DB4"
-						class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/293397035_998578227426392_7122702586950252297_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGvnhYl4zUafY-RBziqGllEUYdLrip4T-9Rh0uuKnhP77FbslANQcwzCVDIC9Z_8Nc&_nc_ohc=9X0H9P5-g1sAX9cw5gu&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfC4AOZUuMskS8kiZolZ02ip5fd9NpDIfK3BL17Ms5U5Iw&oe=64EDE516"
-						class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t39.30808-6/292639241_996562384294643_7724891563168193988_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGG5bgacT3IfHt-FHUGi0BSth5D3wzS1aa2HkPfDNLVpoJhcaSQf21bX729Ws-HKns&_nc_ohc=P5_dMpCMwlYAX8jbyfc&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfCl3dJpPO7cvMPTa-DtmuWIYsMTCI1V90iZEVHOId19hw&oe=64ED7418"
-						class="d-block w-100" alt="...">
-				</div>
-
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</a>
-		</div>
-
-		<section class="d-flex flex-row justify-content-around mt-4">
-			<div class="card" style="width: 10rem;">
-				<img src="https://res.cloudinary.com/dz9dt7nqo/image/upload/v1693000656/u3szvmebdzavhcvlt7no.jpg" class="card-img-top" alt="...">
-				<div class="card-body">
-					<figure class="text-center">
-						<p class="card-text">Pasteles personalizados para celebrar tu cumpleaños</p>
-					</figure>
-				</div>
-			</div>
-
-			<div class="card" style="width: 10rem;">
-				<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/306215386_484468487061643_3194642867139864422_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGgISbaZ1SWmXnfGwLMxDCle50DaIG_c9p7nQNogb9z2mYOzL9m21WeOL2IJOBs4cU&_nc_ohc=s_OhaWFSoqMAX8DZxah&_nc_ht=scontent-lax3-1.xx&oh=00_AfCGIsLt0nitXimaYXzbj1L3QCfo21PWiz7LLTwmaN9Zjw&oe=64ED4627" class="card-img-top" alt="...">
-				<div class="card-body">
-					<figure class="text-center">
-						<p class="card-text">Haz de tu boda algo inolvidable</p>
-					</figure>
-				</div>
-			</div>
-
-		</section>
+  <div id="custom-controls-gallery" class="relative w-full my-4" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="https://res.cloudinary.com/dz9dt7nqo/image/upload/v1694127146/pastel3_hblate.jpg"
+                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://res.cloudinary.com/dz9dt7nqo/image/upload/v1694127297/pastel4_avpzzb.jpg"
+                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://res.cloudinary.com/dz9dt7nqo/image/upload/v1694127554/mesa_iu71bk.jpg"
+                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://res.cloudinary.com/dz9dt7nqo/image/upload/v1694127686/pastelnavidad_echjmq.jpg"
+                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="">
+        </div>
+    </div>
+    <div class="flex justify-center items-center pt-4">
+        <button type="button"
+            class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 5H1m0 0 4 4M1 5l4-4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="flex justify-center items-center h-full cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+</div>
 
 
 
 
-		<figure class="text-center">
-			<h1 class="display-1">Nos Ubicamos en Quintas Carolinas, Chihuahua, Chihuahua</h1>
-		</figure>
 
 
-		<div class="mapouter">
-			<div class="gmap_canvas"><iframe
-					src="https://maps.google.com/maps?q=monte%20tabor%204328,%20Chihuahua&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-					id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 600px;"></iframe>
-				<style>
-					.mapouter {
-						position: relative;
-						text-align: right;
-						height: 400px;
-						width: 400px;
-					}
-				</style>
-				<style>
-					.gmap_canvas {
-						overflow: hidden;
-						background: none !important;
-						height: 400px;
-						width: 415px;
-					}
-				</style><a href="https://www.eireportingonline.com">ei reporting</a>
-			</div>
-		</div>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
-	</html>
+  <script>
+    function showEmails() {
+      document.getElementById("emailContainer").classList.remove("hidden");
+    }
 
+    function hideEmails() {
+      document.getElementById("emailContainer").classList.add("hidden");
+    }
+  </script>
 </body>
 
 </html>
