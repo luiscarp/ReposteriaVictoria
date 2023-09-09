@@ -125,6 +125,7 @@
 
   <!-- Contenedor principal flex con botones -->
   <div class="flex flex-col my-2 justify-center items-center">
+    
     <!-- Botón "Contactanos" desplegable -->
     <div class="relative group">
       <button class="w-48 my-4 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
@@ -157,6 +158,27 @@
       referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
+
+    <div class="flex flex-col my-12 justify-center items-center">
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Gl2cNSroyEmahp4o6afJXZnB49fI4opJgvLQF1_1j1kmKkZVgQam61CdPq_UYhJLdJAz_Zewp?gv=true',
+      color: '#E67C73',
+      label: 'Programar una cita',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+</div>
+  
 
   <footer class="bg-gray-300 dark:bg-gray-900" style="background-color: #5AB369;">
     <div class="max-w-screen-xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
